@@ -12,4 +12,6 @@ $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     while($user = mysqli_fetch_array($result)) {
       echo $user['id'], " : ", $user['name'], "<br>";
     }
+    echo getenv("CLEARDB_DATABASE_URL");
+    var_dump($url);
 ?>
